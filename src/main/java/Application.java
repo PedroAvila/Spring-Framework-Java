@@ -12,12 +12,13 @@ public class Application {
 		
 		ISpeakerService service = appContext.getBean("speakerService", ISpeakerService.class);
 		
-		System.out.println(service);
+		//System.out.println(service);
 		
 		System.out.println(service.findAll().get(0).getFirstName());
+		System.out.println(service.findAll().get(0).getSeedNum());
 		
-		ISpeakerService service2 = appContext.getBean("speakerService", ISpeakerService.class);
-		System.out.println(service2);
+		//ISpeakerService service2 = appContext.getBean("speakerService", ISpeakerService.class);
+		//System.out.println(service2);
 	}
 	
 }
